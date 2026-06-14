@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ottica Becucci">
+  <rect width="64" height="64" rx="14" fill="#134e5e"/>
+  <g fill="none" stroke="#d99a3e" stroke-width="4" stroke-linecap="round">
+    <circle cx="22" cy="34" r="11"/>
+    <circle cx="46" cy="34" r="11"/>
+    <path d="M33 32a4 4 0 0 1 6 0"/>
+  </g>
+</svg>
