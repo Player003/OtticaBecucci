@@ -11,7 +11,6 @@
   <link rel="alternate" hreflang="en" href="https://www.otticabecucci.it/en/" />
   <link rel="alternate" hreflang="x-default" href="https://www.otticabecucci.it/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="business.business" />
   <meta property="og:site_name" content="Ottica Becucci" />
   <meta property="og:locale" content="it_IT" />
@@ -30,7 +29,6 @@
   <link rel="preload" href="assets/css/styles.css" as="style" />
   <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!-- Structured data: Optician (LocalBusiness) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -76,7 +74,8 @@
         <ul class="nav__menu" id="navMenu">
           <li><a class="nav__link" href="#chi-siamo">Chi siamo</a></li>
           <li><a class="nav__link" href="#servizi">Servizi</a></li>
-          <li><a class="nav__link" href="#marche">Marche</a></li>
+          <li><a class="nav__link" href="#lenti">Lenti</a></li>
+          <li><a class="nav__link" href="#montature">Montature</a></li>
           <li><a class="nav__link" href="#promozioni">Promozioni</a></li>
           <li><a class="nav__link" href="#contatti">Dove siamo</a></li>
         </ul>
@@ -103,7 +102,7 @@
           <p class="hero__text">Occhiali da vista e da sole delle migliori marche, lenti progressive personalizzate e lenti a contatto. Prenota il tuo <strong>controllo della vista gratuito</strong> nel cuore di Firenze.</p>
           <div class="hero__actions">
             <a class="btn btn--primary btn--lg" href="#contatti">Prenota il controllo gratuito</a>
-            <a class="btn btn--light btn--lg" href="tel:+39055240600">055 240600</a>
+            <a class="btn btn--light btn--lg" href="#montature">Scopri le montature</a>
           </div>
           <div class="hero__trust">
             <span class="hero__trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Controllo vista gratuito</span>
@@ -114,12 +113,24 @@
       </div>
     </section>
 
+    <!-- ===== Stats ===== -->
+    <section class="stats" aria-label="Ottica Becucci in numeri">
+      <div class="container">
+        <div class="stats__grid">
+          <div><div class="stat__num" data-count="1953">1953</div><div class="stat__label">Anno di fondazione</div></div>
+          <div><div class="stat__num" data-count="70" data-suffix="+">70+</div><div class="stat__label">Anni di esperienza</div></div>
+          <div><div class="stat__num" data-count="12">12</div><div class="stat__label">Marche trattate</div></div>
+          <div><div class="stat__num" data-count="7">7</div><div class="stat__label">Tipi di lenti disponibili</div></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== Chi siamo ===== -->
     <section class="section" id="chi-siamo">
       <div class="container">
         <div class="about__grid reveal">
           <div class="about__media">
-            <img src="assets/images/store.svg" width="600" height="450" loading="lazy" alt="Interno del negozio Ottica Becucci a Firenze" />
+            <img src="assets/images/about.jpg" width="900" height="1100" loading="lazy" alt="Cliente con occhiali da sole alla moda da Ottica Becucci" />
             <div class="about__est"><strong>1953</strong><span>dal</span></div>
           </div>
           <div class="about__body">
@@ -179,27 +190,134 @@
       </div>
     </section>
 
-    <!-- ===== Marche ===== -->
-    <section class="section" id="marche">
+    <!-- ===== Tipi di lenti ===== -->
+    <section class="section" id="lenti">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Le lenti</span>
+          <h2 class="section__title">Quale lente fa per te?</h2>
+          <p class="section__lead">Ogni esigenza visiva ha la sua soluzione. Ecco i principali tipi di lenti che realizziamo su misura.</p>
+        </div>
+        <div class="lens-grid">
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="assets/images/lenses/monofocali.svg" width="96" height="66" loading="lazy" alt="Schema lente monofocale" /></div>
+            <div><h3>Monofocali</h3><p>Lenti a fuoco singolo, ideali per correggere la visione a una distanza (da lontano o da vicino). La soluzione più semplice ed efficace.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="assets/images/lenses/progressive.svg" width="96" height="66" loading="lazy" alt="Schema lente progressiva" /></div>
+            <div><h3>Progressive</h3><p>Visione nitida a tutte le distanze — lontano, intermedio e vicino — senza stacchi né linee. La scelta più versatile per la presbiopia.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="assets/images/lenses/bifocali.svg" width="96" height="66" loading="lazy" alt="Schema lente bifocale" /></div>
+            <div><h3>Bifocali</h3><p>Due aree di messa a fuoco nella stessa lente, da lontano e da vicino, separate da una linea. Comode per chi alterna le due distanze.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="assets/images/lenses/fotocromatiche.svg" width="96" height="66" loading="lazy" alt="Schema lente fotocromatica" /></div>
+            <div><h3>Fotocromatiche</h3><p>Si scuriscono automaticamente alla luce solare e tornano chiare al chiuso. Un solo occhiale per ogni condizione di luce.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="assets/images/lenses/occupazionali.svg" width="96" height="66" loading="lazy" alt="Schema lente occupazionale" /></div>
+            <div><h3>Occupazionali</h3><p>Pensate per ufficio e computer: ottimizzano la visione intermedia e ravvicinata, riducendo l'affaticamento visivo.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="assets/images/lenses/luce-blu.svg" width="96" height="66" loading="lazy" alt="Schema lente con filtro luce blu" /></div>
+            <div><h3>Filtro luce blu</h3><p>Riducono la luce blu emessa da schermi e dispositivi, per un maggior comfort durante le lunghe ore davanti al monitor.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="assets/images/lenses/sole-graduate.svg" width="96" height="66" loading="lazy" alt="Schema lente da sole graduata" /></div>
+            <div><h3>Lenti da sole graduate</h3><p>Protezione UV e correzione visiva in un unico occhiale da sole, disponibili in diverse colorazioni e gradazioni.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Carosello montature ===== -->
+    <section class="section section--tint" id="montature">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Le nostre montature</span>
+          <h2 class="section__title">Modelli iconici da provare in negozio</h2>
+          <p class="section__lead">Una selezione delle montature delle marche che trattiamo. Vieni a provarle: ti aiutiamo a scegliere la tua.</p>
+        </div>
+        <!-- NOTA PER IL TITOLARE: le immagini sono di repertorio. Sostituirle con foto reali dei modelli in vendita. -->
+        <div class="carousel" data-carousel tabindex="0" aria-label="Galleria di montature" aria-roledescription="carosello">
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-aviator.jpg" width="700" height="500" loading="lazy" alt="Occhiali da sole Ray-Ban Aviator" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Occhiali da sole</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Aviator Classic</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-wayfarer.jpg" width="700" height="500" loading="lazy" alt="Occhiali da sole Ray-Ban Wayfarer" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Occhiali da sole</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Wayfarer</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-clubmaster.jpg" width="700" height="500" loading="lazy" alt="Occhiali Ray-Ban Clubmaster" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sole &amp; Vista</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Clubmaster</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-round.jpg" width="700" height="500" loading="lazy" alt="Occhiali da sole tondi Ray-Ban Round" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Occhiali da sole</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Round Metal</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-cateye.jpg" width="700" height="500" loading="lazy" alt="Occhiali da sole cat-eye Liu Jo" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Occhiali da sole</span><h3 class="frame-card__brand">Liu Jo</h3><p class="frame-card__model">Cat-Eye</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-optical.jpg" width="700" height="500" loading="lazy" alt="Montatura da vista Calvin Klein" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Occhiali da vista</span><h3 class="frame-card__brand">Calvin Klein</h3><p class="frame-card__model">Montatura ottica</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-sport.jpg" width="700" height="500" loading="lazy" alt="Occhiali sportivi Cébé" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Occhiali sportivi</span><h3 class="frame-card__brand">Cébé</h3><p class="frame-card__model">Sport</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="assets/images/frame-pilot.jpg" width="700" height="500" loading="lazy" alt="Occhiali da sole pilot La Martina" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Occhiali da sole</span><h3 class="frame-card__brand">La Martina</h3><p class="frame-card__model">Pilot</p></div>
+              </article>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__btn" data-prev aria-label="Montatura precedente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <div class="carousel__dots" role="tablist" aria-label="Seleziona diapositiva"></div>
+            <button class="carousel__btn" data-next aria-label="Montatura successiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Marche (marquee) ===== -->
+    <section class="section" id="marche" aria-label="Marche trattate">
       <div class="container">
         <div class="section__head">
           <span class="section__eyebrow">Le marche che trattiamo</span>
-          <h2 class="section__title">Solo brand di qualità, italiani e internazionali</h2>
+          <h2 class="section__title">Brand di qualità, italiani e internazionali</h2>
         </div>
-        <div class="brands reveal" aria-label="Marche disponibili">
-          <span class="brands__item">Ray-Ban</span>
-          <span class="brands__item">Calvin Klein</span>
-          <span class="brands__item">Liu Jo</span>
-          <span class="brands__item">La Martina</span>
-          <span class="brands__item">Rodenstock</span>
-          <span class="brands__item">Acuvue</span>
-          <span class="brands__item">Alcon</span>
-          <span class="brands__item">Cooper</span>
-          <span class="brands__item">Soleko</span>
-          <span class="brands__item">Cébé</span>
-          <span class="brands__item">Pagani</span>
-          <span class="brands__item">Optovista</span>
+      </div>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="marquee__item">Ray-Ban</span>
+          <span class="marquee__item">Calvin Klein</span>
+          <span class="marquee__item">Liu Jo</span>
+          <span class="marquee__item">La Martina</span>
+          <span class="marquee__item">Rodenstock</span>
+          <span class="marquee__item">Acuvue</span>
+          <span class="marquee__item">Alcon</span>
+          <span class="marquee__item">Cooper</span>
+          <span class="marquee__item">Soleko</span>
+          <span class="marquee__item">Cébé</span>
+          <span class="marquee__item">Pagani</span>
+          <span class="marquee__item">Optovista</span>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== Banner CTA ===== -->
+    <section class="section banner">
+      <div class="container">
+        <h2>Il look giusto inizia da uno sguardo</h2>
+        <p>Dalla montatura quotidiana all'occhiale da sole di tendenza: trova lo stile che ti rappresenta con la nostra consulenza dedicata.</p>
+        <a class="btn btn--primary btn--lg" href="#contatti">Prenota una consulenza</a>
       </div>
     </section>
 
@@ -268,19 +386,24 @@
               </li>
             </ul>
           </div>
-          <div class="map reveal">
-            <iframe
-              title="Mappa — Ottica Becucci, Via Martiri del Popolo 61/r, Firenze"
-              src="https://www.google.com/maps?q=Via+Martiri+del+Popolo+61r+Firenze&output=embed"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="map reveal" data-map
+               data-map-src="https://www.google.com/maps?q=Via+Martiri+del+Popolo+61r+Firenze&output=embed"
+               data-map-title="Mappa — Ottica Becucci, Via Martiri del Popolo 61/r, Firenze">
+            <div class="map__placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p>La mappa è fornita da Google Maps, che può installare cookie. Accetta per visualizzarla.</p>
+              <button class="btn btn--primary" data-map-accept type="button">Mostra la mappa</button>
+              <a href="https://www.google.com/maps/search/?api=1&query=Ottica+Becucci+Via+Martiri+del+Popolo+61r+Firenze" target="_blank" rel="noopener">Apri in Google Maps</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== CTA band ===== -->
-    <section class="section cta-band">
+    <section class="section cta-band cta-band--firenze">
       <div class="container">
+        <span class="cta-band__tag">Orgogliosamente a Firenze dal 1953</span>
         <h2>Pronto a vedere il mondo con occhi nuovi?</h2>
         <p>Prenota oggi il tuo controllo della vista gratuito o chiamaci per una consulenza personalizzata.</p>
         <div class="hero__actions" style="justify-content:center">
@@ -311,7 +434,8 @@
           <ul class="footer__links">
             <li><a href="#chi-siamo">Chi siamo</a></li>
             <li><a href="#servizi">Servizi</a></li>
-            <li><a href="#marche">Marche</a></li>
+            <li><a href="#lenti">Tipi di lenti</a></li>
+            <li><a href="#montature">Montature</a></li>
             <li><a href="#promozioni">Promozioni</a></li>
             <li><a href="#contatti">Dove siamo</a></li>
           </ul>
@@ -332,6 +456,19 @@
       </div>
     </div>
   </footer>
+
+  <button class="to-top" aria-label="Torna su"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+  <!-- ===== Cookie banner ===== -->
+  <div class="cookie" data-cookie role="dialog" aria-label="Informativa sui cookie" aria-live="polite">
+    <div class="cookie__inner">
+      <p><strong>Questo sito utilizza i cookie.</strong> Utilizziamo solo cookie tecnici necessari al funzionamento. I contenuti di terze parti come la mappa di Google vengono caricati solo con il tuo consenso. <a href="#contatti">Maggiori informazioni</a>.</p>
+      <div class="cookie__actions">
+        <button class="btn btn--ghost" data-cookie-reject type="button">Rifiuta</button>
+        <button class="btn btn--primary" data-cookie-accept type="button">Accetta</button>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/js/main.js" defer></script>
 </body>

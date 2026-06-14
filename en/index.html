@@ -11,7 +11,6 @@
   <link rel="alternate" hreflang="en" href="https://www.otticabecucci.it/en/" />
   <link rel="alternate" hreflang="x-default" href="https://www.otticabecucci.it/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="business.business" />
   <meta property="og:site_name" content="Ottica Becucci" />
   <meta property="og:locale" content="en_US" />
@@ -30,7 +29,6 @@
   <link rel="preload" href="../assets/css/styles.css" as="style" />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 
-  <!-- Structured data: Optician (LocalBusiness) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -76,7 +74,8 @@
         <ul class="nav__menu" id="navMenu">
           <li><a class="nav__link" href="#about">About</a></li>
           <li><a class="nav__link" href="#services">Services</a></li>
-          <li><a class="nav__link" href="#brands">Brands</a></li>
+          <li><a class="nav__link" href="#lenses">Lenses</a></li>
+          <li><a class="nav__link" href="#frames">Frames</a></li>
           <li><a class="nav__link" href="#offers">Offers</a></li>
           <li><a class="nav__link" href="#contact">Find us</a></li>
         </ul>
@@ -103,7 +102,7 @@
           <p class="hero__text">Designer prescription glasses and sunglasses, custom progressive lenses and contact lenses. Book your <strong>free eye test</strong> in the heart of Florence.</p>
           <div class="hero__actions">
             <a class="btn btn--primary btn--lg" href="#contact">Book your free eye test</a>
-            <a class="btn btn--light btn--lg" href="tel:+39055240600">+39 055 240600</a>
+            <a class="btn btn--light btn--lg" href="#frames">Discover our frames</a>
           </div>
           <div class="hero__trust">
             <span class="hero__trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Free eye test</span>
@@ -114,12 +113,24 @@
       </div>
     </section>
 
+    <!-- ===== Stats ===== -->
+    <section class="stats" aria-label="Ottica Becucci in numbers">
+      <div class="container">
+        <div class="stats__grid">
+          <div><div class="stat__num" data-count="1953">1953</div><div class="stat__label">Year founded</div></div>
+          <div><div class="stat__num" data-count="70" data-suffix="+">70+</div><div class="stat__label">Years of experience</div></div>
+          <div><div class="stat__num" data-count="12">12</div><div class="stat__label">Brands stocked</div></div>
+          <div><div class="stat__num" data-count="7">7</div><div class="stat__label">Lens types available</div></div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== About ===== -->
     <section class="section" id="about">
       <div class="container">
         <div class="about__grid reveal">
           <div class="about__media">
-            <img src="../assets/images/store.svg" width="600" height="450" loading="lazy" alt="Inside the Ottica Becucci store in Florence" />
+            <img src="../assets/images/about.jpg" width="900" height="1100" loading="lazy" alt="Customer wearing stylish sunglasses at Ottica Becucci" />
             <div class="about__est"><strong>1953</strong><span>since</span></div>
           </div>
           <div class="about__body">
@@ -179,27 +190,134 @@
       </div>
     </section>
 
-    <!-- ===== Brands ===== -->
-    <section class="section" id="brands">
+    <!-- ===== Lens types ===== -->
+    <section class="section" id="lenses">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">The lenses</span>
+          <h2 class="section__title">Which lens is right for you?</h2>
+          <p class="section__lead">Every visual need has its solution. Here are the main lens types we make to measure.</p>
+        </div>
+        <div class="lens-grid">
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="../assets/images/lenses/monofocali.svg" width="96" height="66" loading="lazy" alt="Single vision lens diagram" /></div>
+            <div><h3>Single vision</h3><p>Single-focus lenses, ideal for correcting vision at one distance (far or near). The simplest and most effective solution.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="../assets/images/lenses/progressive.svg" width="96" height="66" loading="lazy" alt="Progressive lens diagram" /></div>
+            <div><h3>Progressive</h3><p>Sharp vision at all distances — far, intermediate and near — with no jumps or visible lines. The most versatile choice for presbyopia.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="../assets/images/lenses/bifocali.svg" width="96" height="66" loading="lazy" alt="Bifocal lens diagram" /></div>
+            <div><h3>Bifocal</h3><p>Two focus areas in the same lens, far and near, separated by a line. Convenient for those who switch between the two distances.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="../assets/images/lenses/fotocromatiche.svg" width="96" height="66" loading="lazy" alt="Photochromic lens diagram" /></div>
+            <div><h3>Photochromic</h3><p>They darken automatically in sunlight and turn clear indoors. One pair of glasses for every lighting condition.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="../assets/images/lenses/occupazionali.svg" width="96" height="66" loading="lazy" alt="Occupational lens diagram" /></div>
+            <div><h3>Occupational</h3><p>Designed for the office and computer: they optimise intermediate and near vision, reducing eye strain.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="../assets/images/lenses/luce-blu.svg" width="96" height="66" loading="lazy" alt="Blue-light filter lens diagram" /></div>
+            <div><h3>Blue-light filter</h3><p>They reduce the blue light emitted by screens and devices, for greater comfort during long hours at the monitor.</p></div>
+          </article>
+          <article class="lens-card reveal">
+            <div class="lens-card__fig"><img src="../assets/images/lenses/sole-graduate.svg" width="96" height="66" loading="lazy" alt="Prescription sunglasses lens diagram" /></div>
+            <div><h3>Prescription sunglasses</h3><p>UV protection and vision correction in a single pair of sunglasses, available in different tints and prescriptions.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Frames carousel ===== -->
+    <section class="section section--tint" id="frames">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Our frames</span>
+          <h2 class="section__title">Iconic models to try in store</h2>
+          <p class="section__lead">A selection of frames from the brands we carry. Come and try them on — we'll help you choose yours.</p>
+        </div>
+        <!-- NOTE TO OWNER: images are stock photos. Replace them with real photos of the models on sale. -->
+        <div class="carousel" data-carousel tabindex="0" aria-label="Frames gallery" aria-roledescription="carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-aviator.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Aviator sunglasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Aviator Classic</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-wayfarer.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Wayfarer sunglasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Wayfarer</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-clubmaster.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Clubmaster glasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sun &amp; Optical</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Clubmaster</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-round.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Round Metal sunglasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Round Metal</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-cateye.jpg" width="700" height="500" loading="lazy" alt="Liu Jo cat-eye sunglasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Liu Jo</h3><p class="frame-card__model">Cat-Eye</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-optical.jpg" width="700" height="500" loading="lazy" alt="Calvin Klein optical frame" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Optical glasses</span><h3 class="frame-card__brand">Calvin Klein</h3><p class="frame-card__model">Optical frame</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-sport.jpg" width="700" height="500" loading="lazy" alt="Cébé sport eyewear" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sport eyewear</span><h3 class="frame-card__brand">Cébé</h3><p class="frame-card__model">Sport</p></div>
+              </article>
+              <article class="frame-card">
+                <div class="frame-card__img"><img src="../assets/images/frame-pilot.jpg" width="700" height="500" loading="lazy" alt="La Martina pilot sunglasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">La Martina</h3><p class="frame-card__model">Pilot</p></div>
+              </article>
+            </div>
+          </div>
+          <div class="carousel__controls">
+            <button class="carousel__btn" data-prev aria-label="Previous frame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <div class="carousel__dots" role="tablist" aria-label="Select slide"></div>
+            <button class="carousel__btn" data-next aria-label="Next frame"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Brands (marquee) ===== -->
+    <section class="section" id="brands" aria-label="Brands stocked">
       <div class="container">
         <div class="section__head">
           <span class="section__eyebrow">The brands we carry</span>
-          <h2 class="section__title">Only quality brands, Italian and international</h2>
+          <h2 class="section__title">Quality brands, Italian and international</h2>
         </div>
-        <div class="brands reveal" aria-label="Available brands">
-          <span class="brands__item">Ray-Ban</span>
-          <span class="brands__item">Calvin Klein</span>
-          <span class="brands__item">Liu Jo</span>
-          <span class="brands__item">La Martina</span>
-          <span class="brands__item">Rodenstock</span>
-          <span class="brands__item">Acuvue</span>
-          <span class="brands__item">Alcon</span>
-          <span class="brands__item">Cooper</span>
-          <span class="brands__item">Soleko</span>
-          <span class="brands__item">Cébé</span>
-          <span class="brands__item">Pagani</span>
-          <span class="brands__item">Optovista</span>
+      </div>
+      <div class="marquee">
+        <div class="marquee__track">
+          <span class="marquee__item">Ray-Ban</span>
+          <span class="marquee__item">Calvin Klein</span>
+          <span class="marquee__item">Liu Jo</span>
+          <span class="marquee__item">La Martina</span>
+          <span class="marquee__item">Rodenstock</span>
+          <span class="marquee__item">Acuvue</span>
+          <span class="marquee__item">Alcon</span>
+          <span class="marquee__item">Cooper</span>
+          <span class="marquee__item">Soleko</span>
+          <span class="marquee__item">Cébé</span>
+          <span class="marquee__item">Pagani</span>
+          <span class="marquee__item">Optovista</span>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== Banner CTA ===== -->
+    <section class="section banner">
+      <div class="container">
+        <h2>The right look starts with a single glance</h2>
+        <p>From your everyday frame to the trendiest sunglasses: find the style that represents you with our dedicated advice.</p>
+        <a class="btn btn--primary btn--lg" href="#contact">Book a consultation</a>
       </div>
     </section>
 
@@ -268,19 +386,24 @@
               </li>
             </ul>
           </div>
-          <div class="map reveal">
-            <iframe
-              title="Map — Ottica Becucci, Via Martiri del Popolo 61/r, Florence"
-              src="https://www.google.com/maps?q=Via+Martiri+del+Popolo+61r+Firenze&output=embed"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="map reveal" data-map
+               data-map-src="https://www.google.com/maps?q=Via+Martiri+del+Popolo+61r+Firenze&output=embed"
+               data-map-title="Map — Ottica Becucci, Via Martiri del Popolo 61/r, Florence">
+            <div class="map__placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <p>The map is provided by Google Maps, which may set cookies. Accept to display it.</p>
+              <button class="btn btn--primary" data-map-accept type="button">Show the map</button>
+              <a href="https://www.google.com/maps/search/?api=1&query=Ottica+Becucci+Via+Martiri+del+Popolo+61r+Firenze" target="_blank" rel="noopener">Open in Google Maps</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== CTA band ===== -->
-    <section class="section cta-band">
+    <section class="section cta-band cta-band--firenze">
       <div class="container">
+        <span class="cta-band__tag">Proudly in Florence since 1953</span>
         <h2>Ready to see the world with new eyes?</h2>
         <p>Book your free eye test today or call us for personal advice.</p>
         <div class="hero__actions" style="justify-content:center">
@@ -311,7 +434,8 @@
           <ul class="footer__links">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#brands">Brands</a></li>
+            <li><a href="#lenses">Lens types</a></li>
+            <li><a href="#frames">Frames</a></li>
             <li><a href="#offers">Offers</a></li>
             <li><a href="#contact">Find us</a></li>
           </ul>
@@ -332,6 +456,19 @@
       </div>
     </div>
   </footer>
+
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg></button>
+
+  <!-- ===== Cookie banner ===== -->
+  <div class="cookie" data-cookie role="dialog" aria-label="Cookie notice" aria-live="polite">
+    <div class="cookie__inner">
+      <p><strong>This website uses cookies.</strong> We only use technical cookies needed for the site to work. Third-party content such as the Google map is loaded only with your consent. <a href="#contact">Learn more</a>.</p>
+      <div class="cookie__actions">
+        <button class="btn btn--ghost" data-cookie-reject type="button">Reject</button>
+        <button class="btn btn--primary" data-cookie-accept type="button">Accept</button>
+      </div>
+    </div>
+  </div>
 
   <script src="../assets/js/main.js" defer></script>
 </body>

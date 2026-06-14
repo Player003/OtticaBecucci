@@ -24,7 +24,13 @@ dipendenza, massima velocità e portabilità.
 
 ## Sezioni della pagina
 
-Hero · Chi siamo · Servizi · Marche · Promozioni · Dove siamo / Contatti · Footer.
+Hero (sfondo: Duomo di Firenze) · Numeri/Stats · Chi siamo · Servizi · **Tipi di
+lenti** · **Carosello montature** · Marche (marquee) · Banner stile · Promozioni ·
+Dove siamo / Contatti (mappa con consenso) · Banner Firenze · Footer.
+
+Elementi interattivi: contatori animati, carosello di montature (frecce, dots,
+swipe, autoplay), marquee marche, animazioni allo scroll, pulsante "torna su",
+banner cookie e mappa caricata solo dopo il consenso.
 
 ## Come modificare i contenuti
 
@@ -36,21 +42,34 @@ Hero · Chi siamo · Servizi · Marche · Promozioni · Dove siamo / Contatti ·
   nel footer e nel blocco dati strutturati `application/ld+json` (aggiornare
   in entrambe le lingue se cambiano).
 
-## Immagini da sostituire (placeholder → foto reali)
+## Immagini e crediti
 
-Le seguenti immagini sono segnaposto SVG e andrebbero sostituite con foto reali
-ottimizzate (preferibilmente `.webp`):
+Le fotografie (hero Duomo di Firenze, skyline, montature del carosello, foto
+"chi siamo", banner stile) sono **foto royalty-free di [Unsplash](https://unsplash.com/license)**,
+scaricate e ospitate localmente in `assets/images/`. La licenza Unsplash ne
+consente l'uso gratuito anche commerciale; l'attribuzione non è obbligatoria ma
+gradita.
 
-| File | Uso | Dimensioni consigliate |
-|------|-----|------------------------|
-| `assets/images/hero.svg` | Sfondo hero | 1600×900 |
-| `assets/images/store.svg` | Foto negozio (Chi siamo) | 600×450 |
-| `assets/images/og-image.svg` | Anteprima social | 1200×630 (esportare in `.jpg`/`.png`) |
+I **tipi di lenti** (`assets/images/lenses/*.svg`) e il logo/favicon sono
+illustrazioni vettoriali realizzate su misura.
 
-> Per l'anteprima social, molte piattaforme non renderizzano gli SVG: esportare
-> `og-image` in `.jpg`/`.png` e aggiornare i meta `og:image` / `twitter:image`
-> (e l'`image` del JSON-LD) di conseguenza. (Opzionale) aggiungere un
-> `apple-touch-icon.png` 180×180 e il relativo `<link rel="apple-touch-icon">`.
+### Da sostituire con materiale reale (consigliato)
+
+| File | Uso | Note |
+|------|-----|------|
+| `assets/images/frame-*.jpg` | Carosello montature | Sostituire con foto reali dei modelli in vendita |
+| `assets/images/hero.jpg` | Sfondo hero (Firenze) | Opzionale: una foto propria del negozio/vetrina |
+| `assets/images/about.jpg` | Sezione "Chi siamo" | Opzionale: foto del titolare/team |
+| `assets/images/og-image.svg` | Anteprima social | Esportare in `.jpg`/`.png` (gli SVG non sempre vengono renderizzati dai social) |
+
+## Cookie e privacy (GDPR)
+
+Il sito usa **solo cookie tecnici**. Non sono presenti analytics o tracciamenti.
+La **mappa di Google** (terza parte che può installare cookie) viene caricata
+**solo dopo il consenso** tramite il banner cookie; in caso di rifiuto resta un
+link per aprire Google Maps in una nuova scheda. La scelta è salvata in
+`localStorage`. Per una piena conformità si consiglia di collegare una pagina di
+**Cookie/Privacy Policy** completa al link "Maggiori informazioni" del banner.
 
 ## SEO e buone pratiche incluse
 
@@ -61,8 +80,9 @@ ottimizzate (preferibilmente `.webp`):
 - `robots.txt` + `sitemap.xml`.
 - Accessibilità: skip link, `aria-label`, focus visibile, contrasto, supporto a
   `prefers-reduced-motion`.
-- Performance: CSS/JS propri e leggeri, JS `defer`, immagini `loading="lazy"`,
-  iframe mappa lazy.
+- Performance: CSS/JS propri e leggeri, JS `defer`, immagini `loading="lazy"`
+  con `width`/`height` per evitare layout shift, mappa caricata on-demand.
+- Privacy: nessun cookie di terze parti prima del consenso (mappa Google gated).
 
 ## Anteprima locale
 

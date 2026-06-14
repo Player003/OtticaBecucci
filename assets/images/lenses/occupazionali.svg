@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" role="img">
+<defs></defs>
+<g fill="none" stroke="#134e5e" stroke-width="5">
+<path d="M40 40 Q110 18 180 40 Q196 75 180 110 Q110 132 40 110 Q24 75 40 40 Z" fill="#eaf1f3"/><path d="M40 75 Q110 64 180 75 L180 110 Q110 132 40 110 Z" fill="#4a90d9" fill-opacity="0.18" stroke="none"/><line x1="40" y1="75" x2="180" y2="75" stroke="#134e5e" stroke-width="2.5"/>
+</g></svg>
