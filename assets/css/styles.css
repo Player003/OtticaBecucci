@@ -129,6 +129,45 @@ ul { margin: 0; padding: 0; }
 .stat__num { font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 2.9rem); color: var(--color-accent); line-height: 1; }
 .stat__label { font-size: 0.9rem; color: rgba(255,255,255,0.82); margin-top: 8px; letter-spacing: 0.02em; }
 
+/* ---------- Value props strip ---------- */
+.valueprops { background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+.valueprops__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 18px; padding: 36px 0; }
+.valueprop { display: flex; gap: 13px; align-items: flex-start; }
+.valueprop__icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: rgba(217,154,62,0.14); color: var(--color-accent-dark); display: grid; place-items: center; }
+.valueprop__icon svg { width: 24px; height: 24px; }
+.valueprop h3 { font-family: var(--font-sans); font-size: 1rem; margin: 0 0 2px; color: var(--color-primary-dark); }
+.valueprop p { margin: 0; font-size: 0.88rem; color: var(--color-muted); line-height: 1.45; }
+
+/* ---------- Collezioni (category tiles) ---------- */
+.collection-grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+.collection-tile {
+  position: relative; overflow: hidden; border-radius: var(--radius); min-height: 230px; display: flex;
+  align-items: flex-end; color: #fff; isolation: isolate; box-shadow: var(--shadow-sm);
+}
+.collection-tile img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.collection-tile::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(transparent 30%, rgba(13,58,71,0.86)); }
+.collection-tile:hover img { transform: scale(1.07); }
+.collection-tile--accent { background: linear-gradient(150deg, var(--color-primary-light), var(--color-primary-dark)); }
+.collection-tile--accent::after { display: none; }
+.collection-tile__body { padding: 22px 24px; width: 100%; display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; }
+.collection-tile__icon { width: 54px; height: 54px; color: rgba(255,255,255,0.92); margin-bottom: auto; }
+.collection-tile h3 { color: #fff; font-size: 1.3rem; margin: 0 0 3px; }
+.collection-tile p { margin: 0; color: rgba(255,255,255,0.85); font-size: 0.88rem; }
+.collection-tile__arrow { width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.16); display: grid; place-items: center; flex-shrink: 0; transition: var(--transition); }
+.collection-tile:hover .collection-tile__arrow { background: var(--color-accent); transform: translateX(3px); }
+.collection-tile__arrow svg { width: 20px; height: 20px; }
+
+/* ---------- Editorial split band ---------- */
+.editorial { background: var(--color-surface); padding: 0; overflow: hidden; }
+.editorial__grid { display: grid; grid-template-columns: 1fr; }
+.editorial__media { min-height: 340px; background-position: center; background-size: cover; }
+.editorial__panel { padding: 56px 22px; display: grid; align-content: center; gap: 16px; }
+.editorial__panel .section__title { text-align: left; }
+.editorial__panel p { color: var(--color-muted); margin: 0; }
+.editorial__list { list-style: none; display: grid; gap: 10px; margin-top: 6px; }
+.editorial__list li { display: flex; gap: 10px; align-items: center; font-weight: 600; color: var(--color-primary-dark); }
+.editorial__list svg { width: 20px; height: 20px; color: var(--color-accent); flex-shrink: 0; }
+
 /* ---------- About ---------- */
 .about__grid { display: grid; gap: 40px; align-items: center; }
 .about__media { position: relative; }
@@ -320,6 +359,8 @@ ul { margin: 0; padding: 0; }
   .lens-grid { grid-template-columns: repeat(2, 1fr); }
   .promos { grid-template-columns: repeat(2, 1fr); }
   .stats__grid { grid-template-columns: repeat(4, 1fr); }
+  .valueprops__grid { grid-template-columns: repeat(4, 1fr); }
+  .collection-grid { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 2fr 1fr 1fr; }
 }
 @media (min-width: 900px) {
@@ -327,6 +368,11 @@ ul { margin: 0; padding: 0; }
   .about__grid { grid-template-columns: 1fr 1fr; }
   .contact__grid { grid-template-columns: 1.1fr 1fr; align-items: start; }
   .frame-card { flex: 0 0 31.5%; }
+  .editorial__grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
+  .editorial__panel { padding: 70px 56px; }
+}
+@media (min-width: 1000px) {
+  .collection-grid { grid-template-columns: repeat(4, 1fr); }
 }
 @media (min-width: 1100px) {
   .lens-grid { grid-template-columns: repeat(3, 1fr); }
