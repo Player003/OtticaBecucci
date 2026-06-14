@@ -129,6 +129,18 @@ ul { margin: 0; padding: 0; }
 .stat__num { font-family: var(--font-serif); font-size: clamp(2rem, 5vw, 2.9rem); color: var(--color-accent); line-height: 1; }
 .stat__label { font-size: 0.9rem; color: rgba(255,255,255,0.82); margin-top: 8px; letter-spacing: 0.02em; }
 
+/* ---------- Masthead (official banner) ---------- */
+.masthead { background: var(--color-bg); }
+.masthead__img { display: block; width: 100%; max-width: 1600px; height: auto; margin-inline: auto; }
+.masthead__cta { background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+.masthead__cta-inner { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: center; padding: 22px 0; text-align: center; }
+.masthead__title { font-family: var(--font-serif); font-size: 1.25rem; color: var(--color-primary-dark); margin: 0 0 3px; }
+.masthead__intro p { margin: 0; color: var(--color-muted); font-size: 0.95rem; }
+.masthead__cta .hero__actions { margin: 0; }
+@media (min-width: 760px) {
+  .masthead__cta-inner { justify-content: space-between; text-align: left; flex-wrap: nowrap; }
+}
+
 /* ---------- Value props strip ---------- */
 .valueprops { background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
 .valueprops__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 18px; padding: 36px 0; }
@@ -243,10 +255,27 @@ ul { margin: 0; padding: 0; }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee__item {
   display: grid; place-items: center; background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm); padding: 18px 30px; font-family: var(--font-serif); font-weight: 700;
-  font-size: 1.1rem; color: var(--color-primary-dark); white-space: nowrap;
+  border-radius: 12px; padding: 20px 30px; min-width: 168px; height: 86px; box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
+.marquee__item:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ---------- Brand wordmarks (logo plates) ---------- */
+.brandmark { color: var(--color-primary-dark); line-height: 1; white-space: nowrap; transition: color var(--transition); }
+.marquee__item:hover .brandmark { color: var(--color-accent-dark); }
+.bm--rayban     { font-family: var(--font-sans); font-weight: 800; text-transform: uppercase; letter-spacing: .01em; font-size: 1.2rem; }
+.bm--ck         { font-family: var(--font-sans); font-weight: 300; text-transform: uppercase; letter-spacing: .3em; font-size: .92rem; }
+.bm--liujo      { font-family: var(--font-sans); font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: 1.12rem; }
+.bm--lamartina  { font-family: var(--font-serif); font-weight: 700; text-transform: uppercase; letter-spacing: .05em; font-size: 1.04rem; }
+.bm--rodenstock { font-family: var(--font-sans); font-weight: 600; text-transform: uppercase; letter-spacing: .17em; font-size: .92rem; }
+.bm--acuvue     { font-family: var(--font-sans); font-weight: 700; letter-spacing: -.01em; font-size: 1.28rem; }
+.bm--alcon      { font-family: var(--font-sans); font-weight: 700; letter-spacing: .04em; font-size: 1.18rem; }
+.bm--cooper     { font-family: var(--font-serif); font-weight: 600; font-size: 1.06rem; letter-spacing: .02em; }
+.bm--soleko     { font-family: var(--font-sans); font-weight: 800; text-transform: uppercase; letter-spacing: .16em; font-size: 1rem; }
+.bm--cebe       { font-family: var(--font-sans); font-weight: 800; font-style: italic; text-transform: uppercase; letter-spacing: .03em; font-size: 1.18rem; }
+.bm--pagani     { font-family: var(--font-serif); font-weight: 600; font-style: italic; font-size: 1.2rem; }
+.bm--optovista  { font-family: var(--font-sans); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: 1rem; }
 
 /* ---------- Banner (parallax CTA) ---------- */
 .banner { position: relative; color: #fff; text-align: center; isolation: isolate; }
@@ -382,13 +411,16 @@ ul { margin: 0; padding: 0; }
 @media (max-width: 860px) {
   .nav__toggle { display: flex; }
   .nav__menu {
-    position: fixed; inset: 64px 0 auto 0; flex-direction: column; align-items: stretch; gap: 0;
-    background: #fff; border-bottom: 1px solid var(--color-border); padding: 8px 22px 18px;
-    box-shadow: var(--shadow-md); transform: translateY(-12px); opacity: 0; pointer-events: none;
+    position: fixed; inset: 66px 0 auto 0; flex-direction: column; align-items: stretch; gap: 0;
+    background: #fff; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);
+    padding: 10px 22px max(22px, env(safe-area-inset-bottom)); max-height: calc(100vh - 66px); overflow-y: auto;
+    box-shadow: var(--shadow-lg); transform: translateY(-12px); opacity: 0; pointer-events: none;
     transition: opacity var(--transition), transform var(--transition);
   }
   .nav__menu.is-open { transform: none; opacity: 1; pointer-events: auto; }
-  .nav__link { padding: 13px 0; border-bottom: 1px solid var(--color-border); }
+  .nav__menu li + li { border-top: 1px solid var(--color-border); }
+  .nav__link { display: block; padding: 17px 6px; font-size: 1.08rem; border-radius: 8px; }
+  .nav__link:hover, .nav__link:focus-visible { background: var(--color-bg); }
   .nav__link::after { display: none; }
   .nav.is-open .nav__toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .nav.is-open .nav__toggle span:nth-child(2) { opacity: 0; }

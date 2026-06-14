@@ -53,6 +53,14 @@ gradita.
 I **tipi di lenti** (`assets/images/lenses/*.svg`) e il logo/favicon sono
 illustrazioni vettoriali realizzate su misura.
 
+Il **banner ufficiale** dell'attività (`assets/images/banner-becucci.jpg`) è
+usato come masthead in cima alla pagina e come anteprima social (`og:image`).
+
+I **loghi delle marche** nella sezione "marche" sono wordmark tipografici
+realizzati con CSS (classi `.bm--*` in `styles.css`): non sono i loghi ufficiali.
+Per usare i loghi reali dei brand, inserire i file forniti dai marchi in
+`assets/images/brands/` e sostituire gli `<span class="brandmark">` con `<img>`.
+
 ### Da sostituire con materiale reale (consigliato)
 
 | File | Uso | Note |
