@@ -3,12 +3,12 @@
   "short_name": "Becucci",
   "description": "Ottica Becucci a Firenze dal 1953 — occhiali, lenti progressive e controllo della vista gratuito.",
   "lang": "it",
-  "start_url": "/",
-  "scope": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#f6f4ef",
   "theme_color": "#134e5e",
   "icons": [
-    { "src": "/assets/images/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "assets/images/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }
