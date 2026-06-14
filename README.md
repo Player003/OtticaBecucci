@@ -80,6 +80,21 @@ Il sito può essere ospitato su qualsiasi hosting statico (GitHub Pages, Netlify
 o lo spazio web attuale). Aggiornare il dominio in `canonical`, `hreflang`,
 `og:url`, `sitemap.xml` e `robots.txt` se diverso da `https://www.otticabecucci.it`.
 
+### GitHub Pages (automatico)
+
+Il repository include il workflow `.github/workflows/deploy-pages.yml` che pubblica
+il sito su GitHub Pages a ogni push. **Serve un solo passaggio manuale una tantum**
+(il token automatico delle Actions non ha i permessi per attivare Pages da solo):
+
+1. Vai su **Settings → Pages** del repository.
+2. In **Build and deployment → Source**, seleziona **GitHub Actions**.
+3. Riesegui il workflow *"Deploy to GitHub Pages"* dalla scheda **Actions**
+   (oppure fai un nuovo push).
+
+Al termine, il sito sarà online su **https://player003.github.io/OtticaBecucci/**
+(IT) e **/OtticaBecucci/en/** (EN). Per usare il dominio reale `otticabecucci.it`,
+impostare un *Custom domain* in Settings → Pages e aggiornare i record DNS.
+
 ## Da completare (a cura del titolare)
 
 - [ ] Sostituire le immagini placeholder con foto reali.
