@@ -56,10 +56,9 @@ illustrazioni vettoriali realizzate su misura.
 Il **banner ufficiale** dell'attività (`assets/images/banner-becucci.jpg`) è
 usato come masthead in cima alla pagina e come anteprima social (`og:image`).
 
-I **loghi delle marche** nella sezione "marche" sono wordmark tipografici
-realizzati con CSS (classi `.bm--*` in `styles.css`): non sono i loghi ufficiali.
-Per usare i loghi reali dei brand, inserire i file forniti dai marchi in
-`assets/images/brands/` e sostituire gli `<span class="brandmark">` con `<img>`.
+I **loghi delle marche** nella sezione "marche" (`assets/images/brands/*.png`)
+sono i loghi ufficiali dei fornitori, recuperati dal sito originale
+(`otticabecucci.it/images/*.bmp`), convertiti in PNG e rifilati.
 
 ### Da sostituire con materiale reale (consigliato)
 

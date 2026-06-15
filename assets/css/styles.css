@@ -255,10 +255,11 @@ ul { margin: 0; padding: 0; }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee__item {
   display: grid; place-items: center; background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: 12px; padding: 20px 30px; min-width: 168px; height: 86px; box-shadow: var(--shadow-sm);
+  border-radius: 12px; padding: 16px 26px; min-width: 184px; height: 88px; box-shadow: var(--shadow-sm);
   transition: transform var(--transition), box-shadow var(--transition);
 }
 .marquee__item:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.marquee__item img { max-height: 48px; max-width: 132px; width: auto; height: auto; object-fit: contain; display: block; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* ---------- Brand wordmarks (logo plates) ---------- */
