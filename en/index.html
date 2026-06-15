@@ -95,8 +95,11 @@
   <main id="main">
     <!-- ===== Masthead (official banner) ===== -->
     <section class="masthead" aria-label="Ottica Foto Becucci">
-      <img class="masthead__img" src="../assets/images/banner-becucci.jpg" width="1600" height="800" fetchpriority="high"
-           alt="Ottica Foto Becucci — La tua visione, il nostro stile. Florence, since 1953: passion, experience, quality." />
+      <picture>
+        <source media="(min-width: 700px)" srcset="../assets/images/banner-becucci.jpg" width="1600" height="800" />
+        <img class="masthead__img" src="../assets/images/banner-mobile.jpg" width="880" height="676" fetchpriority="high"
+             alt="Ottica Foto Becucci — La tua visione, il nostro stile. Florence, since 1953: passion, experience, quality." />
+      </picture>
       <div class="masthead__cta">
         <div class="container">
           <div class="masthead__cta-inner">
@@ -167,9 +170,9 @@
               <span class="collection-tile__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </div>
           </a>
-          <a class="collection-tile collection-tile--accent" href="#services">
+          <a class="collection-tile" href="#services">
+            <img src="../assets/images/contact-lenses.jpg" width="800" height="1000" loading="lazy" alt="Applying a contact lens" />
             <div class="collection-tile__body">
-              <svg class="collection-tile__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3.5"/></svg>
               <div><h3>Contact lenses</h3><p>Daily, monthly and made to measure.</p></div>
               <span class="collection-tile__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
             </div>
@@ -192,35 +195,35 @@
             <div class="carousel__track">
               <article class="frame-card">
                 <div class="frame-card__img"><img src="../assets/images/frame-aviator.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Aviator sunglasses" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Aviator Classic</p></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/rayban.png" width="113" height="65" loading="lazy" alt="Ray-Ban" /><h3 class="frame-card__brand">Ray-Ban</h3></div><p class="frame-card__model">Aviator Classic</p></div>
               </article>
               <article class="frame-card">
                 <div class="frame-card__img"><img src="../assets/images/frame-wayfarer.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Wayfarer sunglasses" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Wayfarer</p></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/rayban.png" width="113" height="65" loading="lazy" alt="Ray-Ban" /><h3 class="frame-card__brand">Ray-Ban</h3></div><p class="frame-card__model">Wayfarer</p></div>
               </article>
               <article class="frame-card">
                 <div class="frame-card__img"><img src="../assets/images/frame-clubmaster.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Clubmaster glasses" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Sun &amp; Optical</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Clubmaster</p></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sun &amp; Optical</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/rayban.png" width="113" height="65" loading="lazy" alt="Ray-Ban" /><h3 class="frame-card__brand">Ray-Ban</h3></div><p class="frame-card__model">Clubmaster</p></div>
               </article>
               <article class="frame-card">
                 <div class="frame-card__img"><img src="../assets/images/frame-round.jpg" width="700" height="500" loading="lazy" alt="Ray-Ban Round Metal sunglasses" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Ray-Ban</h3><p class="frame-card__model">Round Metal</p></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/rayban.png" width="113" height="65" loading="lazy" alt="Ray-Ban" /><h3 class="frame-card__brand">Ray-Ban</h3></div><p class="frame-card__model">Round Metal</p></div>
               </article>
               <article class="frame-card">
                 <div class="frame-card__img"><img src="../assets/images/frame-cateye.jpg" width="700" height="500" loading="lazy" alt="Liu Jo cat-eye sunglasses" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">Liu Jo</h3><p class="frame-card__model">Cat-Eye</p></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/liujo.png" width="217" height="65" loading="lazy" alt="Liu Jo" /><h3 class="frame-card__brand">Liu Jo</h3></div><p class="frame-card__model">Cat-Eye</p></div>
               </article>
               <article class="frame-card">
                 <div class="frame-card__img"><img src="../assets/images/frame-optical.jpg" width="700" height="500" loading="lazy" alt="Calvin Klein optical frame" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Optical glasses</span><h3 class="frame-card__brand">Calvin Klein</h3><p class="frame-card__model">Optical frame</p></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Optical glasses</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/calvinklein.png" width="217" height="41" loading="lazy" alt="Calvin Klein" /><h3 class="frame-card__brand">Calvin Klein</h3></div><p class="frame-card__model">Optical frame</p></div>
               </article>
               <article class="frame-card">
-                <div class="frame-card__img"><img src="../assets/images/frame-sport.jpg" width="700" height="500" loading="lazy" alt="Cébé sport eyewear" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Sport eyewear</span><h3 class="frame-card__brand">Cébé</h3><p class="frame-card__model">Sport</p></div>
+                <div class="frame-card__img"><img src="../assets/images/frame-sport.jpg" width="700" height="500" loading="lazy" alt="Calvin Klein sunglasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/calvinklein.png" width="217" height="41" loading="lazy" alt="Calvin Klein" /><h3 class="frame-card__brand">Calvin Klein</h3></div><p class="frame-card__model">Sunglasses</p></div>
               </article>
               <article class="frame-card">
-                <div class="frame-card__img"><img src="../assets/images/frame-pilot.jpg" width="700" height="500" loading="lazy" alt="La Martina pilot sunglasses" /></div>
-                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><h3 class="frame-card__brand">La Martina</h3><p class="frame-card__model">Pilot</p></div>
+                <div class="frame-card__img"><img src="../assets/images/frame-pilot.jpg" width="700" height="500" loading="lazy" alt="La Martina sunglasses" /></div>
+                <div class="frame-card__body"><span class="frame-card__tag">Sunglasses</span><div class="frame-card__brandrow"><img class="frame-card__logo" src="../assets/images/brands/lamartina.png" width="131" height="90" loading="lazy" alt="La Martina" /><h3 class="frame-card__brand">La Martina</h3></div><p class="frame-card__model">Sunglasses</p></div>
               </article>
             </div>
           </div>
